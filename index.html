@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradise Page</title>
+    <link rel="stylesheet" href="./js/style.css" />
+  </head>
+
+  <body>
+    <div class="style">
+      <div class="example">Ein div mit class="example".</div>
+
+      <div class="example">Ein weiteres div mit class="example".</div>
+
+      <p class="example">Dies ist ein p-Element mit class="example"</p>
+
+      <p>
+        Dies ist ein <span class="example">span</span> Element mit
+        class="example" in einem anderen p-Element.
+      </p>
+
+      <p>
+        Klicken Sie auf die Button, um die Hintergrundfarbe aller Elemente mit
+        class="example" zu ändern.
+      </p>
+
+      <button class="example" onclick="changeBackgroundColor()">
+        Versuchen Sie es
+      </button>
+    </div>
+
+    <div>
+      <ul id="myList">
+        <li>Super Mario World</li>
+        <li>The Legend of Zelda</li>
+        <li>Portal 2</li>
+        <li>Tetris</li>
+        <li>Half-Life 2</li>
+        <li>Red Dead Redemption</li>
+        <li>Grand Theft Auto V</li>
+      </ul>
+      <div class="unten">
+        <button onclick="showContent('firstElementChild')">
+          firstElementChild</button
+        ><br />
+        <button onclick="showContent('lastElementChild')">
+          lastElementChild</button
+        ><br />
+        <button onclick="showContent('firstElementChild.nextElementSibling')">
+          firstElementChild nextElementSibling</button
+        ><br />
+        <button
+          onclick="showContent('lastElementChild.previousElementSibling')"
+        >
+          lastElementChild previousElementSibling
+        </button>
+      </div>
+      <h1>Output</h1>
+      <output></output>
+    </div>
+    //-----------------------------
+    <div>
+      <h1>Meine Einkaufsliste</h1>
+
+      <input type="text" id="inputText" placeholder="Ich benötige..." />
+      <button id="addButton">Hinzufügen</button>
+
+      <ul id="myList"></ul>
+    </div>
+    <div>
+      <form>
+        <select id="farbeAuswahlen">
+          <option>Medium Orchid</option>
+          <option>Mint Cream</option>
+          <option>Dodger Blue</option>
+          <option>Goldenrod</option>
+          <option>Wheat</option>
+          <option>Medium Turquoise</option>
+          <option>Moccasin</option>
+          <option>Fire Brick</option>
+          <option>Lime Green</option>
+          <option>Slate Gray</option>
+        </select>
+        <button id="button">Farbe von Liste Entfernen</button>
+      </form>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
